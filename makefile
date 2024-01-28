@@ -28,12 +28,12 @@ libclassrec.a : $(OBJ_BC) $(OBJ_ADR)
 
  #Target for the dinamic library libclassRec.a, depends on advancedClassificationRec.o basicClassification.o
 libclassrec.so: $(OBJ_BC) $(OBJ_ADR)
-	$(CC) -shared  -fPIC -o  libclassrec.so $(OBJ_BC) $(OBJ_ADR)
+	$(CC) -shared  -fPIC -o  ./libclassrec.so $(OBJ_BC) $(OBJ_ADR)
 
 
 #Target for the dinamic library libclassloops.so, depends on advancedClassificationLoop.o basicClassification.o
 libclassloops.so: $(OBJ_BC) $(OBJ_ADL)
-	$(CC) -shared -fPIC -o libclassloops.so $(OBJ_BC) $(OBJ_ADL)
+	$(CC) -shared -fPIC -o ./libclassloops.so $(OBJ_BC) $(OBJ_ADL)
 
 #creating the 3 O files 
 basicClassification.o: basicClassification.c NumClass.h
